@@ -8,7 +8,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="150px"
+        android:layout_marginTop="75px"
         android:text="GPA CALCULATOR"
         android:textSize="50px"
         android:textStyle="bold" />
@@ -16,8 +16,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="320px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="225px"
+        android:layout_marginLeft="250px"
         android:text="GRADE 1: "
         android:textSize="40px"
         android:textStyle="bold"/>
@@ -25,8 +25,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="470px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="325px"
+        android:layout_marginLeft="250px"
         android:text="GRADE 2: "
         android:textSize="40px"
         android:textStyle="bold"/>
@@ -34,8 +34,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="620px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="425px"
+        android:layout_marginLeft="250px"
         android:text="GRADE 3: "
         android:textSize="40px"
         android:textStyle="bold"/>
@@ -43,8 +43,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="770px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="525px"
+        android:layout_marginLeft="250px"
         android:text="GRADE 4: "
         android:textSize="40px"
         android:textStyle="bold"/>
@@ -52,8 +52,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="920px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="625px"
+        android:layout_marginLeft="250px"
         android:text="GRADE 5: "
         android:textSize="40px"
         android:textStyle="bold"/>
@@ -61,66 +61,66 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1050px"
-        android:layout_marginLeft="175px"
+        android:layout_marginTop="300px"
+        android:layout_marginLeft="1000px"
         android:text="GPA: "
-        android:textSize="40px"
+        android:textSize="80px"
         android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/e1"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="275px"
+        android:layout_marginTop="180px"
+        android:layout_marginLeft="450px"
         android:textSize="40px" />
 
     <EditText
         android:id="@+id/e2"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="425px"
+        android:layout_marginTop="280px"
+        android:layout_marginLeft="450px"
         android:textSize="40px" />
 
     <EditText
         android:id="@+id/e3"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="575px"
+        android:layout_marginTop="380px"
+        android:layout_marginLeft="450px"
         android:textSize="40px" />
 
     <EditText
         android:id="@+id/e4"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="725px"
+        android:layout_marginTop="480px"
+        android:layout_marginLeft="450px"
         android:textSize="40px" />
 
     <EditText
         android:id="@+id/e5"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="875px"
+        android:layout_marginTop="580px"
+        android:layout_marginLeft="450px"
         android:textSize="40px" />
 
     <TextView
         android:id="@+id/t"
         android:layout_width="300px"
         android:layout_height="120px"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="1025px"
+        android:layout_marginTop="300px"
+        android:layout_marginLeft="1200px"
         android:textSize="40px" />
 
     <Button
         android:id="@+id/b"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="1200px"
+        android:layout_marginTop="500px"
+        android:layout_marginLeft="1000px"
         android:text="Compute GPA"
         android:textSize="40px" />
 </RelativeLayout>

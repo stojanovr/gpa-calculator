@@ -35,23 +35,23 @@ public class MainActivity extends AppCompatActivity {
                 float g1, g2, g3, g4, g5;
                 if (count % 2 == 0) {
                     if (e1.getText().toString().equals("") || e2.getText().toString().equals("") || e3.getText().toString().equals("") || e4.getText().toString().equals("") || e5.getText().toString().equals("")) {
-                        t.setText("Enter grades in all fields");
+                        t.setText("Please Enter your Grades and Press Compute");
                     } else {
                         g1 = Float.parseFloat(e1.getText().toString());
                         g2 = Float.parseFloat(e2.getText().toString());
                         g3 = Float.parseFloat(e3.getText().toString());
                         g4 = Float.parseFloat(e4.getText().toString());
                         g5 = Float.parseFloat(e5.getText().toString());
-                        float avg = g1 + g2 + g3 + g4 + g5;
-                        avg = avg / 5;
-                        if (avg < 60) {
-                            t.setText(Float.toString(avg));
+                        float average = g1 + g2 + g3 + g4 + g5;
+                        average = average / 5;
+                        if (average < 60) {
+                            t.setText(Float.toString(average));
                             t.setBackgroundColor(Color.RED);
-                        } else if (avg > 60 && avg < 80) {
-                            t.setText(Float.toString(avg));
+                        } else if (average > 60 && average < 80) {
+                            t.setText(Float.toString(average));
                             t.setBackgroundColor(Color.YELLOW);
-                        } else if (avg >= 80 && avg <= 100) {
-                            t.setText(Float.toString(avg));
+                        } else if (average >= 80 && average <= 100) {
+                            t.setText(Float.toString(average));
                             t.setBackgroundColor(Color.GREEN);
                         }
                         count++;
