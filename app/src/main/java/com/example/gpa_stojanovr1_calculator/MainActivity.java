@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import android.graphics.Color;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -13,29 +12,29 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button b;
+    Button btn;
     EditText e1, e2, e3, e4, e5;
-    TextView t;
+    TextView tView;
     int count = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        b = (Button) findViewById(R.id.b);
+        btn = (Button) findViewById(R.id.b);
         e1 = (EditText) findViewById(R.id.e1);
         e2 = (EditText) findViewById(R.id.e2);
         e3 = (EditText) findViewById(R.id.e3);
         e4 = (EditText) findViewById(R.id.e4);
         e5 = (EditText) findViewById(R.id.e5);
-        t = (TextView) findViewById(R.id.t);
-        t.setBackgroundColor(Color.WHITE);
-        b.setOnClickListener(new View.OnClickListener() {
+        tView = (TextView) findViewById(R.id.t);
+        tView.setBackgroundColor(Color.TRANSPARENT);
+        btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 float g1, g2, g3, g4, g5;
                 if (count % 2 == 0) {
                     if (e1.getText().toString().equals("") || e2.getText().toString().equals("") || e3.getText().toString().equals("") || e4.getText().toString().equals("") || e5.getText().toString().equals("")) {
-                        t.setText("Please Enter your Grades and Press Compute");
+                        tView.setText("Please Enter your Grades and Press Compute");
                     } else {
                         g1 = Float.parseFloat(e1.getText().toString());
                         g2 = Float.parseFloat(e2.getText().toString());
@@ -45,17 +44,17 @@ public class MainActivity extends AppCompatActivity {
                         float average = g1 + g2 + g3 + g4 + g5;
                         average = average / 5;
                         if (average < 60) {
-                            t.setText(Float.toString(average));
-                            t.setBackgroundColor(Color.RED);
+                            tView.setText(Float.toString(average));
+                            tView.setBackgroundColor(Color.RED);
                         } else if (average > 60 && average < 80) {
-                            t.setText(Float.toString(average));
-                            t.setBackgroundColor(Color.YELLOW);
+                            tView.setText(Float.toString(average));
+                            tView.setBackgroundColor(Color.YELLOW);
                         } else if (average >= 80 && average <= 100) {
-                            t.setText(Float.toString(average));
-                            t.setBackgroundColor(Color.GREEN);
+                            tView.setText(Float.toString(average));
+                            tView.setBackgroundColor(Color.GREEN);
                         }
                         count++;
-                        b.setText("Clear");
+                        btn.setText("Clear Form");
                     }
 
                 } else {
@@ -64,12 +63,14 @@ public class MainActivity extends AppCompatActivity {
                     e3.setText("");
                     e4.setText("");
                     e5.setText("");
-                    t.setText("");
-                    b.setText("Compute GPA");
-                    t.setBackgroundColor(Color.WHITE);
+                    tView.setText("");
+                    tView.setBackgroundColor(Color.TRANSPARENT);
+                    btn.setText("Compute GPA");
                     count++;
                 }
+
             }
         });
+
     }
 }
