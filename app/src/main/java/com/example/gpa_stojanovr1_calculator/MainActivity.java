@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btn;
     EditText e1, e2, e3, e4, e5;
-    TextView tView;
+    TextView tView, tViewWarning;
     int count = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         e4 = (EditText) findViewById(R.id.e4);
         e5 = (EditText) findViewById(R.id.e5);
         tView = (TextView) findViewById(R.id.t);
+        tViewWarning = (TextView) findViewById(R.id.warning);
         tView.setBackgroundColor(Color.TRANSPARENT);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,9 @@ public class MainActivity extends AppCompatActivity {
                 float g1, g2, g3, g4, g5;
                 if (count % 2 == 0) {
                     if (e1.getText().toString().equals("") || e2.getText().toString().equals("") || e3.getText().toString().equals("") || e4.getText().toString().equals("") || e5.getText().toString().equals("")) {
-                        tView.setText("Please Enter your Grades and Press Compute");
+                        tViewWarning.setText("Please Enter your Grades");
+                        tViewWarning.setTextColor(Color.rgb(255,0,0));
+
                     } else {
                         g1 = Float.parseFloat(e1.getText().toString());
                         g2 = Float.parseFloat(e2.getText().toString());
@@ -55,6 +58,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                         count++;
                         btn.setText("Clear Form");
+                        tViewWarning.setText("");
                     }
 
                 } else {

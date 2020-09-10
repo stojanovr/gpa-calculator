@@ -121,6 +121,15 @@
         android:layout_marginLeft="1200px"
         android:textSize="60px" />
 
+    <TextView
+        android:id="@+id/warning"
+        android:gravity="center"
+        android:layout_width="800px"
+        android:layout_height="100px"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="730px"
+        android:textSize="60px" />
+
     <Button
         android:id="@+id/b"
         android:layout_width="wrap_content"
