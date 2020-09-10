@@ -74,7 +74,7 @@
         android:layout_marginTop="180px"
         android:layout_marginLeft="450px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e2"
@@ -83,7 +83,7 @@
         android:layout_marginTop="280px"
         android:layout_marginLeft="450px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e3"
@@ -92,7 +92,7 @@
         android:layout_marginTop="380px"
         android:layout_marginLeft="450px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e4"
@@ -101,7 +101,7 @@
         android:layout_marginTop="480px"
         android:layout_marginLeft="450px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e5"
@@ -110,7 +110,7 @@
         android:layout_marginTop="580px"
         android:layout_marginLeft="450px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/t"

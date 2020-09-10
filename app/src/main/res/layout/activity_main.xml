@@ -74,7 +74,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="325px"
         android:textSize="40px"
-        android:inputType="text" />
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e2"
@@ -83,7 +83,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="475px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e3"
@@ -92,7 +92,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="625px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e4"
@@ -101,7 +101,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="775px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <EditText
         android:id="@+id/e5"
@@ -110,7 +110,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="925px"
         android:textSize="40px"
-        android:inputType="text"/>
+        android:inputType="number"/>
 
     <TextView
         android:id="@+id/t"
