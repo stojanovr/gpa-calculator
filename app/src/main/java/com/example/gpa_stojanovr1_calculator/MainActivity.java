@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         view = this.getWindow().getDecorView();
-        view.setBackgroundResource(R.color.white);
+        view.setBackgroundResource(R.color.blue);
 
         btn = (Button) findViewById(R.id.b);
         e1 = (EditText) findViewById(R.id.e1);
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     e4.setText("");
                     e5.setText("");
                     tView.setText("");
-                    view.setBackgroundResource(R.color.white);
+                    view.setBackgroundResource(R.color.blue);
                     btn.setText("Compute GPA");
                     count++;
                 }
