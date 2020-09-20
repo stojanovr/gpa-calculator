@@ -16,10 +16,15 @@ public class MainActivity extends AppCompatActivity {
     EditText e1, e2, e3, e4, e5;
     TextView tView, tViewWarning;
     int count = 0;
+    View view;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        view = this.getWindow().getDecorView();
+        view.setBackgroundResource(R.color.white);
+
         btn = (Button) findViewById(R.id.b);
         e1 = (EditText) findViewById(R.id.e1);
         e2 = (EditText) findViewById(R.id.e2);
@@ -46,15 +51,15 @@ public class MainActivity extends AppCompatActivity {
                         g5 = Float.parseFloat(e5.getText().toString());
                         float average = g1 + g2 + g3 + g4 + g5;
                         average = average / 5;
-                        if (average < 60) {
+                        if (average <= 60) {
                             tView.setText(Float.toString(average));
-                            tView.setBackgroundColor(Color.RED);
+                            view.setBackgroundResource(R.color.red);
                         } else if (average > 60 && average < 80) {
                             tView.setText(Float.toString(average));
-                            tView.setBackgroundColor(Color.YELLOW);
+                            view.setBackgroundResource(R.color.yellow);
                         } else if (average >= 80 && average <= 100) {
                             tView.setText(Float.toString(average));
-                            tView.setBackgroundColor(Color.GREEN);
+                            view.setBackgroundResource(R.color.green);
                         }
                         count++;
                         btn.setText("Clear Form");
@@ -68,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
                     e4.setText("");
                     e5.setText("");
                     tView.setText("");
-                    tView.setBackgroundColor(Color.TRANSPARENT);
+                    view.setBackgroundResource(R.color.white);
                     btn.setText("Compute GPA");
                     count++;
                 }
